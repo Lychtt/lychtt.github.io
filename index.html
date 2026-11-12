@@ -1,0 +1,329 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Joseph Dennis S. Nopuente | Web Developer Portfolio</title>
+
+  <meta name="description" content="Portfolio of Joseph Dennis S. Nopuente, a student developer building clean, responsive web projects. View my projects, certificates, and contact details.">
+  <meta name="author" content="Joseph Dennis S. Nopuente">
+  <meta name="theme-color" content="#fafafa">
+
+  <meta property="og:title" content="Joseph Dennis S. Nopuente | Portfolio">
+  <meta property="og:description" content="Projects, skills, and certificates of Joseph Dennis S. Nopuente.">
+  <meta property="og:type" content="website">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Navigation -->
+  <header class="nav">
+    <a href="#home" class="logo" aria-label="Joseph's portfolio home">
+      JD<span>.</span>
+    </a>
+
+    <nav id="menu" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="nav-actions">
+      <button
+        id="theme"
+        class="icon-btn"
+        type="button"
+        aria-label="Switch to dark mode"
+        aria-pressed="false"
+        title="Toggle theme"
+      >
+        🌙
+      </button>
+
+      <button
+        id="burger"
+        class="icon-btn burger"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="menu"
+      >
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section id="home" class="hero" aria-labelledby="hero-title">
+
+      <div class="hero-text reveal">
+        <p class="eyebrow">Hello, I'm</p>
+
+        <h1 id="hero-title">Joseph Dennis S. Nopuente</h1>
+
+        <p class="tagline">
+          Turning ideas into clean, useful web experiences.
+        </p>
+
+        <p class="lead">
+          I am a 3rd Year Bachelor of Science in Computer Science
+          student at Cavite State University (CVSU) Bacoor,
+          passionate about web development and problem solving.
+        </p>
+
+        <div class="cta">
+          <a class="btn" href="#projects">View My Work</a>
+          <a class="btn ghost" href="#contact">Contact Me</a>
+        </div>
+      </div>
+
+      <div class="hero-art reveal">
+        <img
+          class="avatar"
+          src="assets/images/my.jpg"
+          alt="Portrait of Joseph Dennis S. Nopuente"
+          width="300"
+          height="300"
+          fetchpriority="high"
+        >
+      </div>
+
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section" aria-labelledby="about-title">
+
+      <h2 id="about-title" class="reveal">About Me</h2>
+
+      <div class="about-grid">
+
+        <div class="reveal">
+          <p>
+            Hi! I am Joseph Dennis S. Nopuente, a 3rd Year Bachelor
+            of Science in Computer Science student at Cavite State
+            University (CVSU) Bacoor, Cavite, Philippines.
+            I enjoy building websites and learning new technologies.
+          </p>
+
+          <p>
+            My goal is to become a full-stack developer and,
+            eventually, a Software Engineer.
+          </p>
+
+          <h3>My Learning Progress</h3>
+
+          <ul class="progress">
+            <li>✓ Learned HTML basics</li>
+            <li>✓ Styled pages with CSS</li>
+            <li>✓ Applied Flexbox and layouts</li>
+            <li>✓ Added JavaScript interactivity</li>
+            <li>Learning responsive design</li>
+          </ul>
+
+          <a class="btn ghost" href="assets/resume.pdf" download>
+            Download Resume
+          </a>
+        </div>
+
+        <div class="reveal">
+          <h3>Skills</h3>
+          <ul class="skills" id="skills"></ul>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Projects and Certificates -->
+    <section
+      id="projects"
+      class="section alt"
+      aria-labelledby="projects-title"
+    >
+
+      <h2 id="projects-title" class="reveal">Projects</h2>
+
+      <div
+        class="filters"
+        id="filters"
+        role="group"
+        aria-label="Filter projects by category"
+      ></div>
+
+      <div
+        class="grid"
+        id="projectGrid"
+        aria-live="polite"
+      ></div>
+
+      <h2 class="reveal sub" id="certificates-title">
+        Certificates
+      </h2>
+
+      <div
+        class="grid"
+        id="certGrid"
+        aria-label="Certificates"
+      ></div>
+
+    </section>
+
+    <!-- Contact -->
+    <section
+      id="contact"
+      class="section"
+      aria-labelledby="contact-title"
+    >
+
+      <h2 id="contact-title" class="reveal">Get in Touch</h2>
+
+      <div class="contact-grid">
+
+        <div class="reveal">
+          <p>
+            Have a question or an opportunity?
+            Feel free to send me a message.
+          </p>
+
+          <ul class="links">
+            <li>
+              <a href="mailto:jdnopuente84@gmail.com">
+                jdnopuente84@gmail.com
+              </a>
+
+              <button
+                class="copy-email"
+                type="button"
+                data-copy-email="jdnopuente84@gmail.com"
+                aria-label="Copy email address"
+              >
+                Copy
+              </button>
+            </li>
+
+            <li>
+              <a
+                href="https://github.com/Lychtt"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                GitHub ↗
+              </a>
+            </li>
+          </ul>
+
+          <p
+            id="copyStatus"
+            class="form-status"
+            aria-live="polite"
+          ></p>
+        </div>
+
+        <form
+          class="reveal"
+          action="https://formspree.io/f/mnpdnprn"
+          method="POST"
+        >
+
+          <label for="name">Name</label>
+          <input
+            id="name"
+            name="name"
+            type="text"
+            placeholder="Your name"
+            autocomplete="name"
+            required
+          >
+
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="you@example.com"
+            autocomplete="email"
+            required
+          >
+
+          <label for="msg">Message</label>
+          <textarea
+            id="msg"
+            name="message"
+            rows="5"
+            placeholder="Write your message here..."
+            required
+          ></textarea>
+
+          <button class="btn" type="submit">
+            Send Message
+          </button>
+
+          <p
+            id="formStatus"
+            class="form-status"
+            aria-live="polite"
+          ></p>
+
+        </form>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>
+      &copy; <span id="year"></span>
+      Joseph Dennis S. Nopuente.
+      Built with HTML, CSS &amp; JavaScript.
+    </p>
+  </footer>
+
+  <!-- Back to top -->
+  <button
+    id="backToTop"
+    class="back-to-top"
+    type="button"
+    aria-label="Back to top"
+    title="Back to top"
+  >
+    ↑
+  </button>
+
+  <!-- Image preview -->
+  <div
+    id="lightbox"
+    class="lightbox"
+    role="dialog"
+    aria-modal="true"
+    aria-label="Image preview"
+    aria-hidden="true"
+    hidden
+    tabindex="-1"
+  >
+    <button
+      class="lb-close"
+      type="button"
+      aria-label="Close image preview"
+    >
+      &times;
+    </button>
+
+    <img id="lbImg" alt="">
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+
+</body>
+</html>
